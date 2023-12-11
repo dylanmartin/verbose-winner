@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    system: overseer
+  name: overseer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      system: overseer
+  template:
+    metadata:
+      labels:
+        system: overseer
+    spec:
+      containers:
+      - command:
+        - /workspace/overseer/startup/start.sh
+        image: localhost:32000/nvfl-min:0.0.1
+        imagePullPolicy: IfNotPresent
+        name: overseer
+        ports:
+        - containerPort: 8443
+          name: overseer-port
+          protocol: TCP
+        volumeMounts:
+        - mountPath: /workspace
+          name: workspace
+      volumes:
+      - hostPath:
+          path: '{{ .Values.workspace }}'
+          type: Directory
+        name: workspace

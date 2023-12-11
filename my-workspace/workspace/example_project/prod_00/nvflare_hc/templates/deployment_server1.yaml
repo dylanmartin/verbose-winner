@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    system: server2
+  name: server2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      system: server2
+  template:
+    metadata:
+      labels:
+        system: server2
+    spec:
+      containers:
+      - args:
+        - -u
+        - -m
+        - nvflare.private.fed.app.server.server_train
+        - -m
+        - /workspace/server2
+        - -s
+        - fed_server.json
+        - --set
+        - secure_train=true
+        - config_folder=config
+        - org=nvidia
+        command:
+        - /usr/local/bin/python3
+        image: localhost:32000/nvfl-min:0.0.1
+        imagePullPolicy: IfNotPresent
+        name: server2
+        ports:
+        - containerPort: 8102
+          protocol: TCP
+        - containerPort: 8103
+          protocol: TCP
+        volumeMounts:
+        - mountPath: /workspace
+          name: workspace
+        - mountPath: /tmp/nvflare
+          name: persist
+      volumes:
+      - hostPath:
+          path: '{{ .Values.workspace }}'
+          type: Directory
+        name: workspace
+      - hostPath:
+          path: '{{ .Values.persist }}'
+          type: Directory
+        name: persist
