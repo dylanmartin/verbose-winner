@@ -15,14 +15,9 @@
     }
   ],
   "overseer_agent": {
-    "path": "nvflare.ha.overseer_agent.HttpOverseerAgent",
+    "path": "nvflare.ha.dummy_overseer_agent.DummyOverseerAgent",
     "args": {
-      "role": "server",
-      "overseer_end_point": "https://overseer:8443/api/v1",
-      "project": "example_project",
-      "name": "server1",
-      "fl_port": "8002",
-      "admin_port": "8003"
+      "sp_end_point": "host.docker.internal:8002:8003"
     }
   }
 }

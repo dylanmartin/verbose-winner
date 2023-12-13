@@ -1,0 +1,10 @@
+2023-12-13 21:29:58,101 - Cell - INFO - server: creating listener on grpc://0:8002
+2023-12-13 21:29:58,110 - Cell - INFO - server: created backbone external listener for grpc://0:8002
+2023-12-13 21:29:58,110 - ConnectorManager - INFO - 117: Try start_listener Listener resources: {'secure': False, 'host': 'localhost'}
+2023-12-13 21:29:58,112 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:31559] is starting
+2023-12-13 21:29:58,613 - Cell - INFO - server: created backbone internal listener for tcp://localhost:31559
+2023-12-13 21:29:58,613 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00001 PASSIVE grpc://0:8002] is starting
+2023-12-13 21:29:58,633 - nvflare.fuel.f3.drivers.aio_grpc_driver.Server - INFO - added secure port at 0.0.0.0:8002
+2023-12-13 21:29:58,634 - nvflare.fuel.hci.server.hci - INFO - Starting Admin Server server1 on Port 8003
+2023-12-13 21:29:58,634 - root - INFO - Server started
+2023-12-13 21:29:58,717 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - SERVER: listening on [CH00001 PASSIVE grpc://0:8002]

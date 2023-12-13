@@ -1,0 +1,240 @@
+2023-12-13 21:29:58,155 - Cell - INFO - site-1: created backbone external connector to grpc://host.docker.internal:8002
+2023-12-13 21:29:58,156 - ConnectorManager - INFO - 117: Try start_listener Listener resources: {'secure': False, 'host': 'localhost'}
+2023-12-13 21:29:58,157 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:54962] is starting
+2023-12-13 21:29:58,659 - Cell - INFO - site-1: created backbone internal listener for tcp://localhost:54962
+2023-12-13 21:29:58,660 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00001 ACTIVE grpc://host.docker.internal:8002] is starting
+2023-12-13 21:29:58,661 - FederatedClient - INFO - Wait for engine to be created.
+2023-12-13 21:29:58,680 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:29:58,687 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00002 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:29:58,688 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00002 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:29:58,688 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:29:58,862 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00002 Not Connected] closed
+2023-12-13 21:29:59,872 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:29:59,879 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00003 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:29:59,880 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00003 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:29:59,880 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:00,065 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00003 Not Connected] closed
+2023-12-13 21:30:02,075 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:30:02,080 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00004 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:30:02,080 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00004 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:30:02,081 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:02,270 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00004 Not Connected] closed
+2023-12-13 21:30:06,282 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:30:06,289 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00005 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:30:06,289 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00005 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:30:06,289 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:06,477 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00005 Not Connected] closed
+2023-12-13 21:30:06,478 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 8 seconds
+2023-12-13 21:30:14,494 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:30:14,501 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00006 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:30:14,501 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00006 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:30:14,502 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:14,691 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00006 Not Connected] closed
+2023-12-13 21:30:14,692 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:30:24,714 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:30:24,721 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00007 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:30:24,721 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00007 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:30:24,722 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:24,910 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00007 Not Connected] closed
+2023-12-13 21:30:24,910 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:30:29,190 - MPM - ERROR - Execute exception: RuntimeError: Login failed.
+2023-12-13 21:30:29,190 - MPM - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/fuel/f3/mpm.py", line 146, in run
+    rc = main_func()
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/private/fed/app/client/client_train.py", line 120, in main
+    raise RuntimeError("Login failed.")
+RuntimeError: Login failed.
+
+2023-12-13 21:30:30,821 - MPM - INFO - MPM: Good Bye!
+2023-12-13 21:30:37,960 - Cell - INFO - site-1: created backbone external connector to grpc://host.docker.internal:8002
+2023-12-13 21:30:37,960 - ConnectorManager - INFO - 224: Try start_listener Listener resources: {'secure': False, 'host': 'localhost'}
+2023-12-13 21:30:37,962 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:40637] is starting
+2023-12-13 21:30:38,463 - Cell - INFO - site-1: created backbone internal listener for tcp://localhost:40637
+2023-12-13 21:30:38,464 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00001 ACTIVE grpc://host.docker.internal:8002] is starting
+2023-12-13 21:30:38,466 - FederatedClient - INFO - Wait for engine to be created.
+2023-12-13 21:30:38,476 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:30:38,483 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00002 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:30:38,483 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00002 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:30:38,484 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:38,666 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00002 Not Connected] closed
+2023-12-13 21:30:39,677 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:30:39,683 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00003 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:30:39,684 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00003 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:30:39,684 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:39,869 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00003 Not Connected] closed
+2023-12-13 21:30:41,878 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:30:41,884 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00004 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:30:41,884 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00004 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:30:41,885 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:42,073 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00004 Not Connected] closed
+2023-12-13 21:30:46,084 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:30:46,090 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00005 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:30:46,091 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00005 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:30:46,091 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:46,280 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00005 Not Connected] closed
+2023-12-13 21:30:46,281 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 8 seconds
+2023-12-13 21:30:54,298 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:30:54,305 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00006 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:30:54,305 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00006 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:30:54,306 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:30:54,494 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00006 Not Connected] closed
+2023-12-13 21:30:54,494 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:31:04,514 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:31:04,521 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00007 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:31:04,521 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00007 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:31:04,522 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:31:04,711 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00007 Not Connected] closed
+2023-12-13 21:31:04,711 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:31:08,993 - MPM - ERROR - Execute exception: RuntimeError: Login failed.
+2023-12-13 21:31:08,993 - MPM - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/fuel/f3/mpm.py", line 146, in run
+    rc = main_func()
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/private/fed/app/client/client_train.py", line 120, in main
+    raise RuntimeError("Login failed.")
+RuntimeError: Login failed.
+
+2023-12-13 21:31:10,622 - MPM - INFO - MPM: Good Bye!
+2023-12-13 21:31:18,002 - Cell - INFO - site-1: created backbone external connector to grpc://host.docker.internal:8002
+2023-12-13 21:31:18,003 - ConnectorManager - INFO - 331: Try start_listener Listener resources: {'secure': False, 'host': 'localhost'}
+2023-12-13 21:31:18,004 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:15687] is starting
+2023-12-13 21:31:18,506 - Cell - INFO - site-1: created backbone internal listener for tcp://localhost:15687
+2023-12-13 21:31:18,506 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00001 ACTIVE grpc://host.docker.internal:8002] is starting
+2023-12-13 21:31:18,508 - FederatedClient - INFO - Wait for engine to be created.
+2023-12-13 21:31:18,522 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:31:18,529 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00002 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:31:18,530 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00002 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:31:18,531 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:31:18,710 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00002 Not Connected] closed
+2023-12-13 21:31:19,725 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:31:19,731 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00003 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:31:19,732 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00003 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:31:19,732 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:31:19,912 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00003 Not Connected] closed
+2023-12-13 21:31:21,920 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:31:21,926 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00004 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:31:21,926 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00004 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:31:21,927 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:31:22,117 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00004 Not Connected] closed
+2023-12-13 21:31:26,128 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:31:26,134 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00005 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:31:26,135 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00005 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:31:26,135 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:31:26,325 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00005 Not Connected] closed
+2023-12-13 21:31:26,326 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 8 seconds
+2023-12-13 21:31:34,343 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:31:34,349 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00006 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:31:34,350 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00006 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:31:34,350 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:31:34,540 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00006 Not Connected] closed
+2023-12-13 21:31:34,541 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:31:44,562 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:31:44,568 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00007 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:31:44,569 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00007 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:31:44,569 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:31:44,758 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00007 Not Connected] closed
+2023-12-13 21:31:44,759 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:31:49,035 - MPM - ERROR - Execute exception: RuntimeError: Login failed.
+2023-12-13 21:31:49,035 - MPM - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/fuel/f3/mpm.py", line 146, in run
+    rc = main_func()
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/private/fed/app/client/client_train.py", line 120, in main
+    raise RuntimeError("Login failed.")
+RuntimeError: Login failed.
+
+2023-12-13 21:31:50,669 - MPM - INFO - MPM: Good Bye!
+2023-12-13 21:31:58,048 - Cell - INFO - site-1: created backbone external connector to grpc://host.docker.internal:8002
+2023-12-13 21:31:58,048 - ConnectorManager - INFO - 438: Try start_listener Listener resources: {'secure': False, 'host': 'localhost'}
+2023-12-13 21:31:58,049 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:8350] is starting
+2023-12-13 21:31:58,551 - Cell - INFO - site-1: created backbone internal listener for tcp://localhost:8350
+2023-12-13 21:31:58,552 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00001 ACTIVE grpc://host.docker.internal:8002] is starting
+2023-12-13 21:31:58,553 - FederatedClient - INFO - Wait for engine to be created.
+2023-12-13 21:31:58,566 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:31:58,572 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00002 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:31:58,573 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00002 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:31:58,574 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:31:58,755 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00002 Not Connected] closed
+2023-12-13 21:31:59,769 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:31:59,776 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00003 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:31:59,776 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00003 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:31:59,776 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:31:59,958 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00003 Not Connected] closed
+2023-12-13 21:32:01,968 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:32:01,975 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00004 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:32:01,975 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00004 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:32:01,976 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:32:02,163 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00004 Not Connected] closed
+2023-12-13 21:32:06,174 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:32:06,180 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00005 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:32:06,181 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00005 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:32:06,181 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:32:06,370 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00005 Not Connected] closed
+2023-12-13 21:32:06,371 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 8 seconds
+2023-12-13 21:32:14,389 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:32:14,396 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00006 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:32:14,396 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00006 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:32:14,396 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:32:14,584 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00006 Not Connected] closed
+2023-12-13 21:32:14,585 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:32:24,609 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:32:24,615 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00007 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:32:24,615 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00007 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:32:24,616 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:32:24,803 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00007 Not Connected] closed
+2023-12-13 21:32:24,803 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:32:29,083 - MPM - ERROR - Execute exception: RuntimeError: Login failed.
+2023-12-13 21:32:29,084 - MPM - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/fuel/f3/mpm.py", line 146, in run
+    rc = main_func()
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/private/fed/app/client/client_train.py", line 120, in main
+    raise RuntimeError("Login failed.")
+RuntimeError: Login failed.
+
+2023-12-13 21:32:30,714 - MPM - INFO - MPM: Good Bye!
+2023-12-13 21:32:38,094 - Cell - INFO - site-1: created backbone external connector to grpc://host.docker.internal:8002
+2023-12-13 21:32:38,094 - ConnectorManager - INFO - 545: Try start_listener Listener resources: {'secure': False, 'host': 'localhost'}
+2023-12-13 21:32:38,095 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:63094] is starting
+2023-12-13 21:32:38,597 - Cell - INFO - site-1: created backbone internal listener for tcp://localhost:63094
+2023-12-13 21:32:38,598 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00001 ACTIVE grpc://host.docker.internal:8002] is starting
+2023-12-13 21:32:38,600 - FederatedClient - INFO - Wait for engine to be created.
+2023-12-13 21:32:38,612 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:32:38,619 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00002 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:32:38,619 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00002 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:32:38,620 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:32:38,801 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00002 Not Connected] closed
+2023-12-13 21:32:39,817 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:32:39,822 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00003 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:32:39,823 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00003 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:32:39,823 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:32:40,004 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00003 Not Connected] closed
+2023-12-13 21:32:42,013 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:32:42,019 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00004 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:32:42,019 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00004 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:32:42,020 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:32:42,208 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00004 Not Connected] closed
+2023-12-13 21:32:46,219 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:32:46,225 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00005 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:32:46,226 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00005 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:32:46,226 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:32:46,415 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00005 Not Connected] closed
+2023-12-13 21:32:46,416 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 8 seconds
+2023-12-13 21:32:54,435 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:32:54,441 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00006 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:32:54,442 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00006 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:32:54,442 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:32:54,630 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00006 Not Connected] closed
+2023-12-13 21:32:54,630 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:33:04,652 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2023-12-13 21:33:04,658 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Connection [CN00007 Not Connected] Error: failed to connect to all addresses; last error: UNKNOWN: ipv4:192.168.65.254:8002: Peer name host.docker.internal is not in peer certificate
+2023-12-13 21:33:04,659 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - [CN00007 Not Connected]: in aio_ctx: done read_loop
+2023-12-13 21:33:04,659 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2023-12-13 21:33:04,847 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00007 Not Connected] closed
+2023-12-13 21:33:04,848 - nvflare.fuel.f3.sfm.conn_manager - INFO - Retrying [CH00001 ACTIVE grpc://host.docker.internal:8002] in 10 seconds
+2023-12-13 21:33:09,128 - MPM - ERROR - Execute exception: RuntimeError: Login failed.
+2023-12-13 21:33:09,128 - MPM - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/fuel/f3/mpm.py", line 146, in run
+    rc = main_func()
+  File "/usr/local/lib/python3.8/dist-packages/nvflare/private/fed/app/client/client_train.py", line 120, in main
+    raise RuntimeError("Login failed.")
+RuntimeError: Login failed.
+
+2023-12-13 21:33:10,758 - MPM - INFO - MPM: Good Bye!
