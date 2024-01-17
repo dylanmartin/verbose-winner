@@ -4,10 +4,10 @@
     {
       "name": "example_project",
       "service": {
-        "target": "server1:8002",
+        "target": "host.docker.internal:8002",
         "scheme": "grpc"
       },
-      "admin_host": "server1",
+      "admin_host": "host.docker.internal",
       "admin_port": 8003,
       "ssl_private_key": "server.key",
       "ssl_cert": "server.crt",

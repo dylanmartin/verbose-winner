@@ -1,0 +1,92 @@
+2024-01-17 18:05:27,720 - worker_process - INFO - Worker_process started.
+2024-01-17 18:05:27,813 - Cell - INFO - site-1.bbe2962a-2249-40ee-8639-d8c819403540: created backbone internal connector to tcp://localhost:50173 on parent
+2024-01-17 18:05:27,815 - Cell - INFO - site-1.bbe2962a-2249-40ee-8639-d8c819403540: created backbone external connector to grpc://host.docker.internal:8002
+2024-01-17 18:05:27,815 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00001 ACTIVE tcp://localhost:50173] is starting
+2024-01-17 18:05:27,817 - nvflare.fuel.f3.sfm.conn_manager - INFO - Connector [CH00002 ACTIVE grpc://host.docker.internal:8002] is starting
+2024-01-17 18:05:27,818 - FederatedClient - INFO - Wait for client_runner to be created.
+2024-01-17 18:05:27,819 - FederatedClient - INFO - Got client_runner after 0.0008447170257568359 seconds
+2024-01-17 18:05:27,823 - FederatedClient - INFO - Got the new primary SP: grpc://host.docker.internal:8002
+2024-01-17 18:05:27,836 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540]: client runner started
+2024-01-17 18:05:27,877 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - created secure channel at host.docker.internal:8002
+2024-01-17 18:05:27,896 - Communicator - INFO - Received from example_project server  (840 Bytes). getTask: train time: 0.046648263931274414 seconds
+2024-01-17 18:05:27,898 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2024-01-17 18:05:27,899 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540]: got task assignment: name=train, id=a3d261cb-e827-43c4-aab2-554496daa7f0
+2024-01-17 18:05:27,899 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: invoking task executor NPTrainer
+2024-01-17 18:05:27,900 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: Task name: train
+2024-01-17 18:05:27,900 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: Incoming data kind: WEIGHTS
+2024-01-17 18:05:27,901 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: Model: 
+{'numpy_key': array([[1., 2., 3.],
+       [4., 5., 6.],
+       [7., 8., 9.]], dtype=float32)}
+2024-01-17 18:05:27,901 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: Current Round: 0
+2024-01-17 18:05:27,902 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: Total Rounds: 3
+2024-01-17 18:05:27,902 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: Client identity: site-1
+2024-01-17 18:05:27,907 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: Saved numpy model to: /provision/startup/../bbe2962a-2249-40ee-8639-d8c819403540/model/best_numpy.npy
+2024-01-17 18:05:27,908 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: Model after training: {'numpy_key': array([[ 2.,  3.,  4.],
+       [ 5.,  6.,  7.],
+       [ 8.,  9., 10.]], dtype=float32)}
+2024-01-17 18:05:27,908 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: finished processing task
+2024-01-17 18:05:27,910 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: try #1: sending task result to server
+2024-01-17 18:05:27,910 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: checking task ...
+2024-01-17 18:05:27,916 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: start to send task result to server
+2024-01-17 18:05:27,919 - FederatedClient - INFO - Starting to push execute result.
+2024-01-17 18:05:27,928 - Communicator - INFO -  SubmitUpdate size: 913 Bytes. time: 0.008178949356079102 seconds
+2024-01-17 18:05:27,929 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=a3d261cb-e827-43c4-aab2-554496daa7f0]: task result sent to server
+2024-01-17 18:05:29,941 - Communicator - INFO - Received from example_project server  (861 Bytes). getTask: train time: 0.006032705307006836 seconds
+2024-01-17 18:05:29,943 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2024-01-17 18:05:29,943 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540]: got task assignment: name=train, id=4fba7922-d184-4c6c-aeba-55580484e511
+2024-01-17 18:05:29,944 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: invoking task executor NPTrainer
+2024-01-17 18:05:29,944 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: Task name: train
+2024-01-17 18:05:29,944 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: Incoming data kind: WEIGHTS
+2024-01-17 18:05:29,945 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: Model: 
+{'numpy_key': array([[ 2.,  3.,  4.],
+       [ 5.,  6.,  7.],
+       [ 8.,  9., 10.]], dtype=float32)}
+2024-01-17 18:05:29,946 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: Current Round: 1
+2024-01-17 18:05:29,946 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: Total Rounds: 3
+2024-01-17 18:05:29,946 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: Client identity: site-1
+2024-01-17 18:05:29,950 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: Saved numpy model to: /provision/startup/../bbe2962a-2249-40ee-8639-d8c819403540/model/best_numpy.npy
+2024-01-17 18:05:29,951 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: Model after training: {'numpy_key': array([[ 3.,  4.,  5.],
+       [ 6.,  7.,  8.],
+       [ 9., 10., 11.]], dtype=float32)}
+2024-01-17 18:05:29,952 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: finished processing task
+2024-01-17 18:05:29,952 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: try #1: sending task result to server
+2024-01-17 18:05:29,952 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: checking task ...
+2024-01-17 18:05:29,957 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: start to send task result to server
+2024-01-17 18:05:29,960 - FederatedClient - INFO - Starting to push execute result.
+2024-01-17 18:05:29,967 - Communicator - INFO -  SubmitUpdate size: 913 Bytes. time: 0.006547689437866211 seconds
+2024-01-17 18:05:29,968 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=4fba7922-d184-4c6c-aeba-55580484e511]: task result sent to server
+2024-01-17 18:05:31,979 - Communicator - INFO - Received from example_project server  (861 Bytes). getTask: train time: 0.006375312805175781 seconds
+2024-01-17 18:05:31,981 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2024-01-17 18:05:31,981 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540]: got task assignment: name=train, id=54c85608-7471-4306-b449-ba1c6194ef79
+2024-01-17 18:05:31,982 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: invoking task executor NPTrainer
+2024-01-17 18:05:31,982 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: Task name: train
+2024-01-17 18:05:31,983 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: Incoming data kind: WEIGHTS
+2024-01-17 18:05:31,983 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: Model: 
+{'numpy_key': array([[ 3.,  4.,  5.],
+       [ 6.,  7.,  8.],
+       [ 9., 10., 11.]], dtype=float32)}
+2024-01-17 18:05:31,984 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: Current Round: 2
+2024-01-17 18:05:31,984 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: Total Rounds: 3
+2024-01-17 18:05:31,984 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: Client identity: site-1
+2024-01-17 18:05:31,987 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: Saved numpy model to: /provision/startup/../bbe2962a-2249-40ee-8639-d8c819403540/model/best_numpy.npy
+2024-01-17 18:05:31,988 - NPTrainer - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: Model after training: {'numpy_key': array([[ 4.,  5.,  6.],
+       [ 7.,  8.,  9.],
+       [10., 11., 12.]], dtype=float32)}
+2024-01-17 18:05:31,989 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: finished processing task
+2024-01-17 18:05:31,989 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: try #1: sending task result to server
+2024-01-17 18:05:31,989 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: checking task ...
+2024-01-17 18:05:31,994 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: start to send task result to server
+2024-01-17 18:05:31,997 - FederatedClient - INFO - Starting to push execute result.
+2024-01-17 18:05:32,005 - Communicator - INFO -  SubmitUpdate size: 913 Bytes. time: 0.007094621658325195 seconds
+2024-01-17 18:05:32,006 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540, task_name=train, task_id=54c85608-7471-4306-b449-ba1c6194ef79]: task result sent to server
+2024-01-17 18:05:32,756 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540, peer=example_project, peer_run=bbe2962a-2249-40ee-8639-d8c819403540]: received aux request from Server to end current RUN
+2024-01-17 18:05:32,756 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540]: ABORT (RUN) command received
+2024-01-17 18:05:32,757 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540]: ABORT (RUN) requests end run events sequence
+2024-01-17 18:05:32,757 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540]: ABOUT_TO_END_RUN fired
+2024-01-17 18:05:32,758 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540]: END_RUN fired
+2024-01-17 18:05:34,009 - ClientRunner - INFO - [identity=site-1, run=bbe2962a-2249-40ee-8639-d8c819403540]: run method requests end run events sequence
+2024-01-17 18:05:34,013 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioStreamSession - INFO - Closed GRPC Channel
+2024-01-17 18:05:34,020 - nvflare.fuel.f3.drivers.aio_grpc_driver.AioGrpcDriver - INFO - CLIENT: connection [CN00003 Not Connected] closed
+2024-01-17 18:05:34,021 - FederatedClient - INFO - Shutting down client run: site-1
+2024-01-17 18:05:36,331 - MPM - INFO - MPM: Good Bye!
