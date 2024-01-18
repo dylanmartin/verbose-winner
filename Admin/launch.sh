@@ -3,4 +3,4 @@ docker run --rm --gpus all \
     --name Admin \
     -v /$(pwd)/to_mount:/workspace/ \
     nvflare-pt:latest \
-    //bin/bash -c "python admin.py"
+    //bin/bash -c "python admin.py; tail -f /dev/null"
