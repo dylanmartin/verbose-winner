@@ -1,14 +1,16 @@
 from nvflare.fuel.flare_api.flare_api import new_secure_session
 import os
 
+
+
 print("Starting new secure session")
 sess = new_secure_session(
     "admin@nvidia.com",
-    "workspace/provisioned"
+    "provisioned/"
 )
 
 print("Current working directory:", os.getcwd())
-job_path = os.path.abspath("workspace/job")
+job_path = os.path.abspath("job/")
 print("Job path:", job_path)
 
 try:
