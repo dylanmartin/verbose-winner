@@ -18,8 +18,8 @@ try:
     print(sess.get_system_info())
     job_id = sess.submit_job(job_path)
     print(job_id + " was submitted")
-    # sess.monitor_job(job_id)
-    # print("job done!")
+    sess.monitor_job(job_id)
+    print("job done!")
 
 except Exception as e:
     print(e)
