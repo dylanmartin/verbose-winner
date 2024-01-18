@@ -1,6 +1,6 @@
 # Overview
 
-This repository demonstrates a way to use NVIDIA flare's production mode to provision a secure network and execute a federated analysis run.
+This repository demonstrates a way to use NVIDIA flare's production mode to provision a secure network and execute a federated analysis job.
 
 # Provisioning
 
