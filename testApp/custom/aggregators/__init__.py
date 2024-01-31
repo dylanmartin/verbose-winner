@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from .accumulate_model_aggregator import AccumulateWeightedAggregator
 from .intime_accumulate_model_aggregator import InTimeAccumulateWeightedAggregator
 
-__all__ = ["AccumulateWeightedAggregator", "InTimeAccumulateWeightedAggregator"]
+__all__ = [ "InTimeAccumulateWeightedAggregator"]
