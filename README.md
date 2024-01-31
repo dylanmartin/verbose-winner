@@ -1,7 +1,7 @@
 
 To run the testApp:
 * Launch the docker container using `./dockerRun.sh`
-* Run the following command inside the container: `nvflare simulator ./testApp/ -w /tmp/nvflare/workspace_folder/ -t 1`
+* Run the following command inside the container: `nvflare simulator ./testApp/ -w /tmp/nvflare/workspace_folder/ -t 2`
 
 To run the production mode test:
 * cd into `production-mode-test/`
