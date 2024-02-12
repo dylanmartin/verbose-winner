@@ -1,0 +1,8 @@
+coinstac
+matplotlib
+nilearn
+numba
+scikit-learn
+statsmodels
+ujson
+numpy
