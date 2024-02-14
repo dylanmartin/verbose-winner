@@ -6,6 +6,7 @@ import statsmodels.api as sm
 from local_ancillary import ignore_nans
 import regression as reg
 
+
 def local_2(incoming_shareable, fl_ctx, abort_signal):
 
     cache = load_cache()
@@ -30,9 +31,9 @@ def local_2(incoming_shareable, fl_ctx, abort_signal):
 
         varX_matrix_local.append(np.dot(X_.T, X_).tolist())
 
-    return Shareable({
+    return Shareable({"result": {
         "SSE_local": SSE_local,
         "SST_local": SST_local,
         "varX_matrix_local": varX_matrix_local,
         "computation_phase": 'local_2'
-    })
+    }})

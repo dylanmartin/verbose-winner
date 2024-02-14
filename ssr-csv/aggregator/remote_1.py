@@ -10,9 +10,7 @@ def compute_degrees_of_freedom(count_local, num_features):
     """Computes the global degrees of freedom."""
     return np.sum(count_local) - num_features
 
-def remote_1(args):
-
-    sites_data = args["input"]
+def remote_1(sites_data):
     site_ids = list(sites_data.keys())
 
     # Assuming all sites have the same number of features for simplicity

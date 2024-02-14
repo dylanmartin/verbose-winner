@@ -1,8 +1,9 @@
 import pandas as pd
 import os
 from nvflare.apis.shareable import Shareable
-from cache import save_cache 
+from cache import save_cache
 from local_ancillary import local_stats_to_dict_fsl
+
 
 def load_data(file_path, base_directory, headers):
     """Loads specified columns from a CSV file.
@@ -48,7 +49,7 @@ def local_1(incoming_shareable, fl_ctx, abort_signal):
     save_cache(cache_dict)
     # end save cache
 
-    return Shareable({
+    return Shareable({"result": {
         "beta_vector_local": beta_vector,
         "mean_y_local": mean_outcomes,
         "count_local": len_outcomes,
@@ -56,4 +57,4 @@ def local_1(incoming_shareable, fl_ctx, abort_signal):
         "y_labels": outcome_headers,
         "local_stats_dict": local_stats_list,
         "computation_phase": 'local_1',
-    })
+    }})

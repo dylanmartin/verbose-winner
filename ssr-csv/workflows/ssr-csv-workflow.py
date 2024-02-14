@@ -19,6 +19,7 @@ class ssr_csv(Controller):
         
         ## set the current phase in fl_ctx
         
+        ## maybe these headers can come from the meta.json in the job and be passed in to this workflow
         local_1_input_shareable = Shareable({
             "feature_headers": ["age", "isControl"]
             "outcome_headers": ["y", "n"],
