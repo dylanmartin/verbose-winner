@@ -27,6 +27,8 @@ class Ssr_csv_aggregator(Aggregator):
         contribution_round = fl_ctx.get_prop(key=ReservedKey.CURRENT_ROUND, default="?")
         if(contribution_round == 1):
             remote_1(self.stored_data[contribution_round])
+        if(contribution_round == 2):
+            remote_2(self.stored_data[contribution_round])
             
         
         
