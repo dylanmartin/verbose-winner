@@ -1,17 +1,17 @@
 {
-    "format_version": 2,
-    "executors": [
-      {
-        "tasks": [
-          "train"
-        ],
-        "executor": {
-          "path": "executor.average_executor.AverageExecutor",
-          "args": {}
-        }
+  "format_version": 2,
+  "executors": [
+    {
+      "tasks": [
+        "get_local_average_and_count"
+      ],
+      "executor": {
+        "path": "executor.average_executor.AverageExecutor",
+        "args": {}
       }
-    ],
-    "task_result_filters": [],
-    "task_data_filters": [],
-    "components": []
-  }
+    }
+  ],
+  "task_result_filters": [],
+  "task_data_filters": [],
+  "components": []
+}

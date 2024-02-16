@@ -1,44 +1,60 @@
 from nvflare.apis.shareable import Shareable
 from nvflare.apis.fl_context import FLContext
 from nvflare.app_common.abstract.aggregator import Aggregator
-
-from get_global_average import get_global_average
+from nvflare.apis.fl_constant import ReservedKey
+from .get_global_average import get_global_average
 
 class AverageAggregator(Aggregator):
-    def __init__(
-        self,
-    ):
+    def __init__(self):
         super().__init__()
-        self.stored_data = {}
-    """
-    {
-        [round_number][site_name] = [data]
-    }
-    
-    site data will be a dict containing average and count
-    """
+        # Initialize stored_data to hold contributions per round and contributor
+        self.stored_data = {}  # Structure: {round_number: {contributor_name: data}}
 
     def accept(self, shareable: Shareable, fl_ctx: FLContext) -> bool:
+        """Accepts shareable contributions for aggregation.
 
-        # add the data in this shareable to the list of shareables for this contribution round
-        contribution_round = fl_ctx.get_prop(
-            key=ReservedKey.CURRENT_ROUND, default="?")
-        contributor_name = shareable.get_peer_prop(
-            key=ReservedKey.IDENTITY_NAME, default="?")
+        Args:
+            shareable: The shareable data from a contributor.
+            fl_ctx: The federated learning context.
 
-        if (contribution_round not in self.stored_data):
-            self.stored_data[contribution_round] = []
+        Returns:
+            bool: True indicating acceptance of the shareable data.
+        """
+        contribution_round = fl_ctx.get_prop(key="CURRENT_ROUND", default=None)
+        contributor_name = shareable.get_peer_prop(key=ReservedKey.IDENTITY_NAME, default=None)
 
-        self.stored_data[contribution_round][contributor_name]
-        self.stored_data[contribution_round][contributor_name] = shareable["result"]
-        # no checking at this point, just accept
+        print(f"Aggregator received contribution from {contributor_name} for round {contribution_round}")
+        if contribution_round is None or contributor_name is None:
+            return False  # Could log a warning/error here as well
+
+        if contribution_round not in self.stored_data:
+            self.stored_data[contribution_round] = {}
+
+        # It's assumed shareable.get("result", {}) correctly fetches the data dict
+        self.stored_data[contribution_round][contributor_name] = shareable.get("result", {})
         return True
 
     def aggregate(self, fl_ctx: FLContext) -> Shareable:
-        contribution_round = fl_ctx.get_prop(
-            key=ReservedKey.CURRENT_ROUND, default="?")
-        # for each site in this round of stored data, calculate the average
-        # and store it in a new shareable
-        global_average = get_global_average(
-            self.stored_data[contribution_round])
-        return Shareable({"global_average": global_average})
+        """Aggregates contributions for the current round into a global average.
+
+        Args:
+            fl_ctx: The federated learning context.
+
+        Returns:
+            Shareable: A shareable containing the global average.
+        """
+        contribution_round = fl_ctx.get_prop(key="CURRENT_ROUND", default=None)
+        data_for_aggregation = []
+
+        if contribution_round in self.stored_data and self.stored_data[contribution_round]:
+            for data in self.stored_data[contribution_round].values():
+                data_for_aggregation.append(data)
+
+            global_average = get_global_average(data_for_aggregation)
+            outgoing_shareable = Shareable()
+            outgoing_shareable["global_average"] = global_average
+            
+            return outgoing_shareable
+        else:
+            return Shareable()  # Return an empty Shareable if no data to aggregate
+

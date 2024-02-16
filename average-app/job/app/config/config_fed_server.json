@@ -8,7 +8,7 @@
   "components": [
     {
       "id": "aggregator",
-      "path": "aggregator.aggregator_average.AverageAggregator",
+      "path": "aggregator.average_aggregator.AverageAggregator",
       "args": {
       }
     }
@@ -16,7 +16,7 @@
   "workflows": [
     {
       "id": "average_workflow",
-      "path": "workflows.average_workflow.AverageWorkflow",
+      "path": "workflow.average_workflow.AverageWorkflow",
       "args": {
         "aggregator_id": "aggregator"
       }

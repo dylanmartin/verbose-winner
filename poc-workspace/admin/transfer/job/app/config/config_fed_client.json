@@ -3,7 +3,7 @@
     "executors": [
       {
         "tasks": [
-          "train"
+          "get_local_average_and_count"
         ],
         "executor": {
           "path": "executor.average_executor.AverageExecutor",
