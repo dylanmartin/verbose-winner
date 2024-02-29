@@ -28,7 +28,6 @@
   - config_fed_client.json for the app looks like this:
 
 ```
-
 {
     "format_version": 2,
     "executors": [
